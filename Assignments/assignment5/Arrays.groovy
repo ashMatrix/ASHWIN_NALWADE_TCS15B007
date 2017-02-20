@@ -70,4 +70,17 @@ public static void main(String[] args)
  example2.printQueue();
  println example2.sizeQueue();
    
+ //parantheses matching
+ //sentinel value = s
+ Stack example3 = new Stack()
+ println "Enter size of input:"
+ def size_input = System.console().readLine();
+  while(size_input--)
+   {
+     def temp = System.console().readLine();
+     if(temp=='(') example3.push(1);
+     else if(temp==')' && example3.sizeStack()!=0) example3.pop();
+   }
+  if(example3.sizeStack()) println "Unmatched"
+  else println "Matched"
  }
