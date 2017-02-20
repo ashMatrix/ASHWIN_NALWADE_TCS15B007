@@ -78,8 +78,8 @@ public static void main(String[] args)
   while(size_input--)
    {
      def temp = System.console().readLine();
-     if(temp=='(') example3.push(1);
-     else if(temp==')' && example3.sizeStack()!=0) example3.pop();
+     if(temp=='(') example3.pushStack(1);
+     else if(temp==')' && example3.sizeStack()!=0) example3.popStack();
    }
   if(example3.sizeStack()) println "Unmatched"
   else println "Matched"
