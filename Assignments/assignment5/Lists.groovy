@@ -172,5 +172,6 @@ static void main(String[] args)
  if (c=='2') 
     { 
        println "--Queue--"; 
-       l.queue_();}
+       l.queue_();
+    }
 }
